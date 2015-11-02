@@ -1,0 +1,10 @@
+div(ng-controller="main")	
+	div#chatbox
+		ul#messages
+			li(ng-repeat="message in messages")
+				b{{ message.user }}: 
+				|	{{ message.text }}
+
+	form#chat(ng-submit="submit()")
+			input#chat(type="text", placeholder="Wiadomość", ng-model="msg", required)
+			input#chatsubmit(type="submit", value="Wyślij")

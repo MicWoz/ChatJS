@@ -1,0 +1,7 @@
+div(id="animated-example", class="animated bounceInDown")
+	div#loginPad(ng-controller="loginCtrl")
+		h2#loginPad Chat
+
+		form#loginPad(ng-submit="submit()")
+			input#loginPad(type="text", placeholder="Nazwa", ng-model="login", name="nick", required)
+			input#loginPadsubmit(type="submit", value="Chatuj") 
