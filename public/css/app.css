@@ -1,0 +1,151 @@
+html { 
+  margin: 0; 
+  padding: 0; 
+}
+body {
+  background-color: white;
+  font: 13px Helvetica, Arial;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+div#chatbox {
+  margin-bottom: 2.7%;
+}
+form#chat { 
+  background: #ff9600; 
+  padding: 0.25%; 
+  position: fixed; 
+  bottom: 0;
+  width: 100%; 
+}
+form#loginPad {  
+  padding: 0.25%; 
+  width: 100%; 
+  margin: auto;
+}
+input#chat { 
+  border: 0;
+  width: -moz-calc(90% - 20px);
+  width: -webkit-calc(90% - 20px);
+  width: -o-calc(90% - 20px);
+  width: calc(90% - 20px);
+  padding: 10px; 
+  margin-right: 0.25%
+}
+input#chatsubmit { 
+  width: 9.25%;
+  background: rgb(130, 224, 255); 
+  border: none; 
+  padding: 10px; 
+}
+input#loginPadsubmit {
+  width: 20%;
+  background: rgb(130, 224, 255); 
+  border: none; 
+  padding: 10px;  
+  margin: 5% 40% 5% 40%; 
+}
+div#loginPad {
+  height: 100%;
+  border: 1px solid #d63f00; 
+  box-shadow: 1px 1px 4px 4px rgba(0,0,0,0.25);
+  border-radius: 0px 0px 20px 20px; 
+  width: 30%; 
+  background: #ff9600; 
+  margin: auto;
+  margin-top: -2px;
+  padding: 10px;
+  -moz-animation-name: example;
+  -moz-animation-duration: 5s;
+  -o-animation-name: example;
+  -o-animation-duration: 5s;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s; 
+  animation-name: example;
+  animation-duration: 5s;
+}
+input#loginPad {
+  width: -moz-calc(98% - 20px);
+  width: -webkit-calc(98% - 20px);
+  width: -o-calc(98% - 20px);
+  width: calc(98% - 20px);
+  padding: 10px;
+  border: 0;
+  margin: 0% 1% 0% 1%;
+  -moz-animation-name: example;
+  -moz-animation-duration: 5s;
+  -o-animation-name: example;
+  -o-animation-duration: 5s;
+  -webkit-animation-name: example;
+  -webkit-animation-duration: 5s; 
+  animation-name: example;
+  animation-duration: 5s; 
+} 
+h2#loginPad {
+  font-size: 400%;
+  margin-top: 10%;
+  font-family: Broadway;
+  text-align: center;
+  color: #d63f00;
+}
+#messages { 
+  list-style-type: none; 
+  margin: 0; 
+  padding: 0; 
+  overflow: auto;
+  height: 90%;
+}
+#messages li { 
+  padding: 5px 10px; 
+}
+#messages li:nth-child(odd) { 
+  background: #eee; 
+}
+.animated { 
+    -webkit-animation-duration: 1s; 
+    animation-duration: 1s; 
+    -webkit-animation-fill-mode: both; 
+    animation-fill-mode: both; 
+} 
+
+@-webkit-keyframes bounceInDown { 
+   0% { 
+       opacity: 0; 
+        -webkit-transform: translateY(-2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        -webkit-transform: translateY(30px); 
+    } 
+    80% { 
+        -webkit-transform: translateY(-10px); 
+    } 
+    100% { 
+        -webkit-transform: translateY(0); 
+    } 
+} 
+
+@keyframes bounceInDown { 
+    0% { 
+        opacity: 0; 
+        transform: translateY(-2000px); 
+    } 
+    60% { 
+        opacity: 1; 
+        transform: translateY(30px); 
+    } 
+    80% { 
+        transform: translateY(-10px); 
+    } 
+    100% { 
+        transform: translateY(0); 
+    } 
+} 
+
+.bounceInDown { 
+    -webkit-animation-name: bounceInDown; 
+    animation-name: bounceInDown; 
+}
+
+
